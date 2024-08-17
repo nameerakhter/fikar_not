@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        'background': "url('/assets/bg-img.png')"
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

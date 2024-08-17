@@ -1,12 +1,16 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className='bg-[#370617] h-[4rem] w-[27rem] rounded-full translate-x-[35rem] mt-4'>
+    <div className=' h-[4rem]  rounded-xl'>
         <div className='flex items-center justify-center gap-[4rem] text-xl p-[1rem]'>
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Contact</a>
+        <Image src='/assets/logo.png' width={30} height={30} alt='logo'/>
+        <a href="">Buy/Sell</a>
+        <a href="">Grow</a>
+        <a href="">Markets</a>
+        <a href="">Business</a>
+        <a href="">Support</a>
         </div>
         
     </div>
