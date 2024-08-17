@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import { Button } from './ui/button'
 
 const Navbar = () => {
   return (
@@ -11,6 +12,7 @@ const Navbar = () => {
         <a href="">Markets</a>
         <a href="">Business</a>
         <a href="">Support</a>
+        <Button className='bg-[#97dc22] text-black text-xl font-extrabold'>CLick me</Button>
         </div>
         
     </div>
