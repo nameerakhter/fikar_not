@@ -13,7 +13,7 @@ const Eth = () => {
         >
           <div className="relative h-full w-full flex items-center justify-center group">
             <Image
-              src="/assets/solana.png"
+              src="/assets/eth.png"
               alt="solana"
               width={200}
               height={200}

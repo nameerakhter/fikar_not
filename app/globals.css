@@ -8,3 +8,15 @@ body {
   margin: 0;
   padding: 0;
 }
+.wallet-card{
+  background-color: rgb(0, 0, 0) !important;
+  color: white !important;
+  height: 35 !important;
+  width: 50rem !important;
+  padding: 2rem 2rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center!important;
+  text-wrap: wrap !important;
+}

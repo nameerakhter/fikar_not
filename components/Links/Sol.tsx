@@ -13,7 +13,7 @@ const Sol = () => {
         >
           <div className="relative h-full w-full flex items-center justify-center group">
             <Image
-              src="/assets/eth.png"
+              src="/assets/solana.png"
               alt="solana"
               width={200}
               height={200}
