@@ -20,6 +20,7 @@ const config = {
     extend: {
       backgroundImage: {
         'background': "url('/assets/bg.png')",
+        'background-wallet': "url('/assets/img1.png')",
         'new-background': "url('/assets/img.png')"
       },
       keyframes: {

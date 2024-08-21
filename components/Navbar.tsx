@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Button } from './ui/button'
 import {useGSAP} from '@gsap/react'
 import  gsap  from 'gsap'

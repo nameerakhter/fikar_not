@@ -1,6 +1,9 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import { generateMnemonic, mnemonicToSeedSync } from 'bip39';
+import { derivePath } from "ed25519-hd-key";
+import { Keypair, PublicKey } from "@solana/web3.js";
+import nacl from "tweetnacl";
 import Btc from '@/components/Links/Btc';
 import { Button } from '@/components/ui/button';
 import { ToastContainer, toast } from 'react-toastify';
@@ -13,15 +16,20 @@ import { Checkbox } from "@/components/ui/checkbox"
 // Ensure the component name starts with an uppercase letter
 const Page = () => {
   const [mnemonicArr, setMnemonicArr] = useState<string[]>([]);
+  const [mnemonic, setMnemonic] = useState<string>('');
+  const [isCheckboxChecked, setIsCheckboxChecked] = useState(false);
 
   useEffect(() => {
     // Generate a 12-word mnemonic on the client side
-    const mnemonic = generateMnemonic();
-    const mnemonicArray = mnemonic.split(' ');
+    const generatedMnemonic = generateMnemonic();
+    const mnemonicArray = generatedMnemonic.split(' ');
     setMnemonicArr(mnemonicArray);
-    const seed = mnemonicToSeedSync(mnemonic);
-    console.log('Generated Mnemonic:', mnemonicArray);
+    setMnemonic(generatedMnemonic); 
   }, []);
+
+  const handleCheckboxChange = () => {
+    setIsCheckboxChecked(!isCheckboxChecked);
+  };
 
   const copyMnemonics = () => {
     let copyText = mnemonicArr.join(' ');
@@ -30,7 +38,7 @@ const Page = () => {
   };
 
   return (
-    <div className='text-black bg-[#070b1d] font-extrabold'>
+    <div className='text-black bg-[#070b1d] bg-background-wallet bg-cover font-extrabold'>
       <div className='flex items-center justify-center p-[2rem]'>
         <Btc />
       </div>
@@ -61,7 +69,7 @@ const Page = () => {
 
               theme="dark" />
               <div className='flex items-center gap-[1rem]'>
-              <Checkbox className='bg-white' /><div className="grid gap-1.5 leading-none text-white">
+              <Checkbox className='bg-white'  onCheckedChange={handleCheckboxChange} /><div className="grid gap-1.5 leading-none text-white">
               <label
                 htmlFor="terms1"
                 className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
@@ -73,8 +81,11 @@ const Page = () => {
             
           </div>
         </section>
-        <section className='w-1/2 p-[2rem]'><BtcForm />
-        </section>
+        {isCheckboxChecked && (
+          <section className='w-1/2 p-[2rem]'>
+            <BtcForm mnemonic={mnemonic}/>
+          </section>
+        )}
       </div>
     </div>
   );
