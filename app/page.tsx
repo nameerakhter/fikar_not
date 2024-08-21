@@ -7,7 +7,7 @@ import BtcForm from "@/components/forms/BtcForm";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black bg-background bg-cover bg-no-repeat text-white   ">
+    <div className="min-h-screen bg-[#070b1d] bg-cover bg-no-repeat text-white ">
       <Navbar />
       <Header />
       <Wallet />

@@ -19,7 +19,7 @@ const config = {
     },
     extend: {
       backgroundImage: {
-        'background': "url('/assets/bg-img.png')",
+        'background': "url('/assets/bg.png')",
         'new-background': "url('/assets/img.png')"
       },
       keyframes: {
