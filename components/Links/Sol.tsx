@@ -8,7 +8,7 @@ const Sol = () => {
   return (
     <Link href="/sol">
     <Card
-          title="Etherium"
+          title="Solana"
           className="h-[20rem] w-[20rem] rounded-full border-0 relative overflow-hidden flex items-center justify-center bg-transparent"
         >
           <div className="relative h-full w-full flex items-center justify-center group">
