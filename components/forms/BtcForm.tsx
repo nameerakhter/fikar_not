@@ -51,7 +51,7 @@ const BtcForm = ({mnemonic}: {mnemonic: string}) => {
           
           <p className='break-words selection:bg-black'>{walletPrivateSecret ? walletPrivateSecret : 'Generating Private Key...'}</p>
         </div>
-        <div className={`absolute bottom-0 left-0 h-[40rem] w-[49rem] blur-sm bg-[#1235ec]/100 rounded-xl transition-opacity duration-500 ${isTransparent ? 'opacity-0' : 'bg-transparent'} `}>
+        <div className={`absolute bottom-0 left-0 h-[40rem] w-[52rem] blur-sm bg-[#1235ec]/100 rounded-xl transition-opacity duration-500 ${isTransparent ? 'opacity-0' : 'bg-transparent'}`}>
         <div className='absolute inset-0 blur-sm bg-transparent '></div>
       </div>
       <FaEyeSlash
