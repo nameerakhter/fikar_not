@@ -29,7 +29,7 @@ const Navbar = () => {
         <a className='link' href="">Markets</a>
         <a className='link' href="">Business</a>
         <a className='link' href="">Support</a>
-        <Button className='link text-[#bababa] leading-tight text-xl font-extrabold bg-gradient-to-r from-cyan-500 to-blue-500'>View Source code</Button>
+        <Button className='link text-[#bababa] leading-tight text-xl font-extrabold bg-gradient-to-r from-cyan-500 to-blue-500'>V 1.0</Button>
         </div>
         
       </div>
