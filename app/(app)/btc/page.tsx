@@ -30,8 +30,8 @@ const Page = () => {
   };
 
   return (
-    <div className='text-black font-extrabold'>
-      <div className='flex items-center justify-center m-[2rem]'>
+    <div className='text-black bg-[#070b1d] font-extrabold'>
+      <div className='flex items-center justify-center p-[2rem]'>
         <Btc />
       </div>
       <div className='flex items-center justify-center'>
@@ -39,7 +39,7 @@ const Page = () => {
           <div className='rounded-xl p-[2rem] mx-[2rem] w-[800px]'>
             <div className='grid grid-cols-4 gap-4 h-[300px]'>
               {mnemonicArr.map((word, index) => (
-                <div className='bg-[#97dc22] flex items-center justify-center  gap-2 rounded-xl' key={index}>
+                <div className='bg-[#1235ec] text-white flex items-center justify-center  gap-2 rounded-xl' key={index}>
                   <div>{index + 1}.&nbsp;{word}</div>
                 </div>
               ))}

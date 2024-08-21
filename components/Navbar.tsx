@@ -12,18 +12,18 @@ const Navbar = () => {
 
   })
   return (
-    <div className=' h-[4rem]  rounded-xl navbar text-[#bababa]'>
-      <div className='flex items-center justify-evenly gap-[4rem] text-xl p-[1rem]'>
-        <div className='logo'>
+    <div className=' h-[4rem] rounded-xl navbar text-[#bababa]'>
+      <div className='flex items-center justify-evenly gap-[3rem] text-xl p-[1rem]'>
+        <div className='logo mt-4'>
           <Image
-            src='/assets/logo.png'
+            src='/assets/symbol.png'
             width={40}
             height={40}
             alt='logo'
           />
 
         </div>
-        <div className='flex items-center justify-center gap-7'>
+        <div className='flex items-center justify-center gap-[4rem]'>
         <a className='link' href="">Buy/Sell</a>
         <a className='link' href="">Grow</a>
         <a className='link' href="">Markets</a>

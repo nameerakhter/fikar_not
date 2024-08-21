@@ -9,7 +9,7 @@ import BtcForm from './forms/BtcForm';
 const Wallet = () => {
   return (
     <>
-      <div className="h-[30rem] full rounded-xl top-[3rem] flex  items-center justify-center gap-[4rem] mt-[1rem]">
+      <div className="h-[30rem] full rounded-xl top-[3rem] flex  items-center justify-center gap-[4rem] mt-[1rem] ">
         <Sol />
         <Btc />
         <Eth />
