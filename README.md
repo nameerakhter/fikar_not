@@ -1,6 +1,6 @@
 # Fikar_not
 
-## Web3 based Wallet version 1.0
+## Web3 based Wallet version 1.0.
 
 https://github.com/user-attachments/assets/9f96ff0f-4b6b-4e54-97a1-3b69a1524463
 
